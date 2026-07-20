@@ -8,11 +8,11 @@ func main() {
 	// Товар
 	firstProductName := "Сыр"
 	firstProductPrice := 34.50
-	firstProductAmount := 4
+	firstProductAmount := 2
 
 	secondProductName := "Колбаса"
 	secondProductPrice := 169.99
-	secondProductAmount := 2
+	secondProductAmount := 4
 
 	thirdProductName := "Яйца"
 	thirdProductPrice := 19.99
@@ -34,4 +34,12 @@ func main() {
 	fmt.Println("-------------------")
 	fmt.Printf("ИТОГО: %.2f руб\n", totalPrice)
 	fmt.Println("===================")
+
+	if totalPrice <= 100 {
+		fmt.Println("Это очень выгодное предложение!")
+	} else if totalPrice <= 300 {
+		fmt.Println("Я могу позволить себе это.")
+	} else {
+		fmt.Println("Это слишком дорого я не мого позволить себе это.")
+	}
 }
